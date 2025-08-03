@@ -145,8 +145,7 @@ Refer [commands.md](./commands.md) for list of commands and their use.
 
 ## 5. Questions
 
-1. What is the difference between a distributed and a centralized version control system? <br>
-2. What are the different types of version control systems? Why is Git preferred? <br>
+1. 
 
 ---
 
