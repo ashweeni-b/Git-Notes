@@ -93,6 +93,7 @@ There are 3 areas in the Git workflow:
 <li> Staging Area </li>
 - Changes made in the working directory are staged here <br>
 - Staged means the changes are saved and they are ready to be committed <br>
+- Also known as the index of the git repository <br>
 
 <br>
 

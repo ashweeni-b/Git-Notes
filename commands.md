@@ -32,6 +32,9 @@ Used to commit the staged files with a message. <br> <br>
 <li> <code> git commit </code> </li>
 Used to commit the staged files using the set/default code editor. The commit message is written with the help of the default code editor. <br> <br>
 
+<li> <code> git commit -am "message" </code> </li>
+Used to stage and commit the file simultaneously with a message. <br> <br>
+
 <li> <code> git config --global user.email [email_id] </code> </li>
 Used to set the <i> email-id </i> of the user. <br> <br>
 
@@ -61,6 +64,10 @@ Used to get detailed commit history about the HEAD branch. <br> <br>
 <li> <code> git show [commit-id] </code> </li>
 Used to get the detailed commit history for the provided commit-id. <br> <br>
 
+<li> <code> git show HEAD~n </code> </li>
+Used to get the detailed commit history for the nth commit-id. <br> 
+E.g. <code> git show HEAD~3 </code> - Shows commit history of the 3rd commit.<br> <br>
+
 <li> <code> code . </code> </li>
 Used to run the current directory in the default code editor. <br> <br>
 
@@ -75,5 +82,36 @@ Used to check the configuration set for the Git. Gives information about the use
 
 <li> <code> git [topic] --help </code> </li>
 Used to get information regarding the <i> topic </i> in the new tab. <br> <br>
+
+<li> <code> git checkout [file_name] </code> </li>
+Used to unmodify/revert the changes in the <i> file_name </i>. <br>
+Used after the files are modified but before the staging area. <br> <br>
+
+<li> <code> git checkout . </code> </li>
+Used to unmodify/revert the changes in all the files present in the directory. <br> <br>
+
+<li> <code> git checkout [commit_id] </code> </li>
+Opens the <i> commit_id </i> as the HEAD. <br>
+The HEAD is detached head i.e. it is detatched from the master branch and it is attached to the <i> commit_id </i>. <br>
+The <i> commit_id </i> and the <i> commit_message </i> is seen once the HEAD is attached to the <i> commit_id </i>. <br>
+Status of the project during that <i> commit_id </i> is retrieved back. <br>
+To back to the master branch, use <code> git checkout master </code>. <br> <br>
+Any modifications made in the detatched HEAD does not get saved, which means it does not exists once moved to the master branch. <br> <br>
  
+<li> <code> git revert [commit_id] </code> </li>
+Undo the specific commit with the given <i> commit_id </i>. <br>
+No other commits are disturbed, while reverting the specific commit. <br>
+
+<li> <code> git reset --mixed [commi_id] </code> </li>
+Remove the commits and files are in the unstaged area. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+
+<li> <code> git reset --soft [commi_id] </code> </li>
+Remove the commits and files are in the staging area. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+
+<li> <code> git reset --hard [commi_id] </code> </li>
+Remove the commits and files directly. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+
 </ol>
