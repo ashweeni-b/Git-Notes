@@ -103,7 +103,7 @@ There are 3 areas in the Git workflow:
 <br>
 </ol>
 
-![Git Workflow]()
+![Git Workflow](https://github.com/ashweeni-b/Git-Notes/blob/main/assets/Git%20Workflow.jpg)
 
 ---
 
