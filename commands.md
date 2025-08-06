@@ -100,18 +100,30 @@ Any modifications made in the detatched HEAD does not get saved, which means it 
  
 <li> <code> git revert [commit_id] </code> </li>
 Undo the specific commit with the given <i> commit_id </i>. <br>
-No other commits are disturbed, while reverting the specific commit. <br>
+No other commits are disturbed, while reverting the specific commit. <br> <br>
 
-<li> <code> git reset --mixed [commi_id] </code> </li>
+<li> <code> git reset --mixed [commit_id] </code> </li>
 Remove the commits and files are in the unstaged area. <br>
-The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br> <br>
 
-<li> <code> git reset --soft [commi_id] </code> </li>
+<li> <code> git reset --soft [commit_id] </code> </li>
 Remove the commits and files are in the staging area. <br>
-The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br> <br>
 
-<li> <code> git reset --hard [commi_id] </code> </li>
+<li> <code> git reset --hard [commit_id] </code> </li>
 Remove the commits and files directly. <br>
-The <i> commit_id </i> is the id upto which we need to remove the commit. <br>
+The <i> commit_id </i> is the id upto which we need to remove the commit. <br> <br>
+
+<li> <code> git reset . </code> </li>
+Remove the commits and follows the <code> git reset --mixed </code> command. <br> <br>
+
+<blockquote>
+<b> How to ignore files in Git? </b> <br>
+1. Create a <i> .gitignore </i> file in the project folder. <br> <br>
+2. Add the file names to be ignored in the format as follows : <br>
+(a) [folder_name]/[file_name] - If files are present in different folders <br>
+(b) /[file_name] - If files are present in the same folder <br>
+(c) /*.[extension] - If more files with same extension is present and we have to ignore them at once <br>
+</blockquote>
 
 </ol>

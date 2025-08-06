@@ -1,6 +1,6 @@
 ## 📒 Git – Notes
 
-> 🗓️ Last Updated: 2025-08-03 <br>
+> 🗓️ Last Updated: 2025-08-06 <br>
 > 🏷️ Part of my Week 2 of #CodetoCareer journey
 
 ---
@@ -111,22 +111,22 @@ There are 3 areas in the Git workflow:
 
 <ol>
 <li> Untracked files </li>
-Files within the working directory which Git is not managing <br>
+Files within the working directory which Git is not managing <br> <br>
 
 <li> Tracked files </li>
-Files within the working directory and managed by Git <br>
+Files within the working directory and managed by Git <br> <br>
 
 <li> Unmodified files </li>
-Files with no changes or modifications <br>
+Files with no changes or modifications <br> <br>
 
 <li> Modified files </li>
-Files with changes or modifications <br>
+Files with changes or modifications <br> <br>
 
 <li> Unstaged files </li>
-Modified files which are not ready to commit <br>
+Modified files which are not ready to commit <br> <br>
 
 <li> Staged files </li>
-Modified files which are ready to commit <br>
+Modified files which are ready to commit <br> <br>
 
 </ol>
 
@@ -137,20 +137,21 @@ Refer [How to install Git on Windows 11](https://youtu.be/t2-l3WvWvqg?si=LcF-lqI
 
 ---
 
-## 4. Git Commands
+## 7. Git Commands
 
 Refer [commands.md](./commands.md) for list of commands and their use.
 
 ---
 
 
-## 5. Questions
+## 8. Questions
 
 1. 
 
 ---
 
-## 6. References
+
+## 9. References
 
 - [Git - Introduction](https://www.geeksforgeeks.org/git/git-introduction/)
 - [How to Install Git on Windows Command Line?](https://www.geeksforgeeks.org/installation-guide/how-to-install-git-on-windows-command-line/)
