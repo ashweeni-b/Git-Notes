@@ -7,15 +7,19 @@ The Git commands used to complete the tasks are as follows:
 <li> <code> git --version </code> </li>
 Tells the version of Git installed in the system. <br> <br>
 
+<li> <code> git [topic] --help </code> </li>
+Used to get information regarding the <i> topic </i> in the new tab. <br> 
+
+____ 
+
+<br>
+
 <li> <code> git init </code> </li>
 - Used to initialize the current repository as git repository. <br>
 - Creates an empty repository in the current directory. <br>
 - The current directory becomes the default master branch. <br>
 - <i> .git </i> file is created in the directory after initialization of the repository as the Git repository. <br>
 - <i> .git </i> file is the hidden file in the directory. <br> <br>
-
-<li> <code> git status </code> </li>
-Used to get the current status of the repository. <br> <br>
 
 <li> <code> git add [file_name] </code> </li>
 Used to add the modified <i> file_name </i> to the staging area. <br> <br>
@@ -33,7 +37,11 @@ Used to commit the staged files with a message. <br> <br>
 Used to commit the staged files using the set/default code editor. The commit message is written with the help of the default code editor. <br> <br>
 
 <li> <code> git commit -am "message" </code> </li>
-Used to stage and commit the file simultaneously with a message. <br> <br>
+Used to stage and commit the file simultaneously with a message. <br> 
+
+____
+
+<br>
 
 <li> <code> git config --global user.email [email_id] </code> </li>
 Used to set the <i> email-id </i> of the user. <br> <br>
@@ -45,7 +53,14 @@ Used to set the <i> user-name </i> of the user. <br> <br>
 Used to check the <i> email-id </i> of the user. <br> <br>
 
 <li> <code> git config --global user.name </code> </li>
-Used to check the <i> user-name </i> of the user. <br> <br>
+Used to check the <i> user-name </i> of the user. <br> 
+
+____
+
+<br>
+
+<li> <code> git status </code> </li>
+Used to get the current status of the repository. <br> <br>
 
 <li> <code> git log </code> </li>
 Used to get commit history. <br> <br>
@@ -56,7 +71,11 @@ Commit key is generated depending on the contents of the file. </li>
 </blockquote> <br>
 
 <li> <code> git log --oneline </code> </li>
-Used to get commit history in short form - 7 character SHA-1 key and a one line commit message. <br> <br>
+Used to get commit history in short form - 7 character SHA-1 key and a one line commit message. <br> 
+
+____
+
+<br>
 
 <li> <code> git show HEAD </code> </li>
 Used to get detailed commit history about the HEAD branch. <br> <br>
@@ -66,7 +85,11 @@ Used to get the detailed commit history for the provided commit-id. <br> <br>
 
 <li> <code> git show HEAD~n </code> </li>
 Used to get the detailed commit history for the nth commit-id. <br> 
-E.g. <code> git show HEAD~3 </code> - Shows commit history of the 3rd commit.<br> <br>
+E.g. <code> git show HEAD~3 </code> - Shows commit history of the 3rd commit.<br> 
+
+____
+
+<br>
 
 <li> <code> code . </code> </li>
 Used to run the current directory in the default code editor. <br> <br>
@@ -78,10 +101,11 @@ Used to run the repository <i> repository_name </i> in the default code editor. 
 Used to run the file <i> file_name </i> in the default code editor. <br> <br>
 
 <li> <code> code ~/.git config </code> </li>
-Used to check the configuration set for the Git. Gives information about the username, email and editor. <br> <br>
+Used to check the configuration set for the Git. Gives information about the username, email and editor. <br> 
 
-<li> <code> git [topic] --help </code> </li>
-Used to get information regarding the <i> topic </i> in the new tab. <br> <br>
+____
+
+<br>
 
 <li> <code> git checkout [file_name] </code> </li>
 Used to unmodify/revert the changes in the <i> file_name </i>. <br>
@@ -95,8 +119,12 @@ Opens the <i> commit_id </i> as the HEAD. <br>
 The HEAD is detached head i.e. it is detatched from the master branch and it is attached to the <i> commit_id </i>. <br>
 The <i> commit_id </i> and the <i> commit_message </i> is seen once the HEAD is attached to the <i> commit_id </i>. <br>
 Status of the project during that <i> commit_id </i> is retrieved back. <br>
-To go back to the master branch, use <code> git checkout master </code>. <br> <br>
-Any modifications made in the detatched HEAD does not get saved, which means it does not exists once moved to the master branch. <br> <br>
+To go back to the master branch, use <code> git checkout master </code>. <br> 
+Any modifications made in the detatched HEAD does not get saved, which means it does not exists once moved to the master branch. <br> 
+
+____
+
+<br>
  
 <li> <code> git revert [commit_id] </code> </li>
 Undo the specific commit with the given <i> commit_id </i>. <br>
@@ -126,6 +154,10 @@ Remove the commits and follows the <code> git reset --mixed </code> command. <br
 (b) /[file_name] - If files are present in the same folder <br>
 (c) /*.[extension] - If more files with same extension is present and we have to ignore them at once 
 </blockquote> <br>
+
+____
+
+<br>
 
 <li> <code> git remote add origin [https-link-of-repository] </code> </li> 
 Used to connect local repo to the remote repo. <br>
@@ -163,5 +195,49 @@ Pull the content from the origin main branch of the local repo. <br> <br>
 
 <li> <code> git pull </code> </li> 
 Used to pull the content from the set branch of remote repo to the local repo. <br> 
+
+____
+
+<br>
+
+<li> <code> git branch [branch_name] </code> </li>
+Used to create a new branch <i> branch_name </i>. <br> <br>
+
+<li> <code> git branch </code> </li>
+Used to list the branches in the project. <br>
+The current branch is highlighted with a '*' and is in green color. <br> <br>
+
+<li> <code> git checkout [branch_name] </code> </li>
+Used to switch between branches. <br> <br>
+
+<li> <code> git checkout -b [branch_name] </code> </li>
+Used to create the branch <i> branch_name </i> and switch to the newly created branch. <br> <br>
+
+<blockquote>
+In Git, the modifications made by specific branches are not seen in other branches until and unless the branches all are merged.
+</blockquote> <br> 
+
+<li> <code> git push origin [branch_name] </code> </li>
+Used to push the locally created branch to the remote repo. <br> <br>
+
+<li> <code> git pull origin [branch_name] </code> </li>
+Used to pull the remotely created branch to the local repo. <br> <br>
+
+<blockquote>
+In Git, the remotely pulled repo is not seen in the local repo until we track the repos. <br>
+</blockquote> <br> 
+
+<li> <code> git checkout --track origin/[branch_name] </code> </li>
+Used to track the remotely created and pulled branch. <br> <br>
+
+<li> <code> git branch -D [branch_name] </code> </li>
+Used to locally delete the branch <i> branch_name </i> from the local repo. <br> <br>
+
+<li> <code> git push origin --delete [branch_name] </code> </li>
+Used to remotely delete the branch <i> branch_name </i> from the local repo. <br> <br>
+
+<blockquote>
+Branch deleted locally, does not delete the branch remotely. And branch deleted remotely, does not delete the branch locally. 
+</blockquote> <br> <br>
 
 </ol>
