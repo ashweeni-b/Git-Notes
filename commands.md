@@ -95,12 +95,13 @@ Opens the <i> commit_id </i> as the HEAD. <br>
 The HEAD is detached head i.e. it is detatched from the master branch and it is attached to the <i> commit_id </i>. <br>
 The <i> commit_id </i> and the <i> commit_message </i> is seen once the HEAD is attached to the <i> commit_id </i>. <br>
 Status of the project during that <i> commit_id </i> is retrieved back. <br>
-To back to the master branch, use <code> git checkout master </code>. <br> <br>
+To go back to the master branch, use <code> git checkout master </code>. <br> <br>
 Any modifications made in the detatched HEAD does not get saved, which means it does not exists once moved to the master branch. <br> <br>
  
 <li> <code> git revert [commit_id] </code> </li>
 Undo the specific commit with the given <i> commit_id </i>. <br>
-No other commits are disturbed, while reverting the specific commit. <br> <br>
+No other commits are disturbed, while reverting the specific commit. <br> 
+A new commit with the revert changes appears in the log history. <br> <br>
 
 <li> <code> git reset --mixed [commit_id] </code> </li>
 Remove the commits and files are in the unstaged area. <br>
