@@ -124,7 +124,44 @@ Remove the commits and follows the <code> git reset --mixed </code> command. <br
 2. Add the file names to be ignored in the format as follows : <br>
 (a) [folder_name]/[file_name] - If files are present in different folders <br>
 (b) /[file_name] - If files are present in the same folder <br>
-(c) /*.[extension] - If more files with same extension is present and we have to ignore them at once <br>
-</blockquote>
+(c) /*.[extension] - If more files with same extension is present and we have to ignore them at once 
+</blockquote> <br>
+
+<li> <code> git remote add origin [https-link-of-repository] </code> </li> 
+Used to connect local repo to the remote repo. <br>
+The https-link of the remote repo is used. <br> <br>
+
+<li> <code> git remote remove origin </code> </li> 
+Removes the connection of local repo and remote repo. <br> <br>
+
+<li> <code> git remote -v </code> </li> 
+Used to check the connected remote repos. <br> <br>
+
+<li> <code> git branch --set-upstream-to=origin/[branch] main </code> </li> <br>
+Links local branch to the remote branch so that Git knows which branch to pull from and push to by default. <br>
+In Git, the upstream branch is the default remote branch that your current local branch is tracking. <br>
+origin/[branch] is the remote branch and main is the local branch. <br>
+Set the local branch main to track the remote branch origin/[branch]. <br>
+After setting this branch, we can directly use <code> git pull </code> and <code> git push </code> <br> <br>
+
+<li> <code> git push origin main </code> </li> 
+Used to push the content from local repo to the remote repo. <br>
+Push the content to the origin main branch of the remote repo. <br> <br>
+
+<blockquote>
+Instead of setting the upstream branch, alternatively we can use <code> git push -u origin main </code> at the first time while pushing the content into the remote repo. <br>
+This not only pushes the content, but also sets the upstream branch as the origin main branch. </br> 
+So, after that we can directly use <code> git push </code> and <code> git pull </code> for pushing and pulling of content to and from remote repo.
+</blockquote> <br>
+
+<li> <code> git push </code> </li> 
+Used to push the content from local repo to the set branch of the remote repo. <br> <br>
+
+<li> <code> git pull origin main </code> </li> 
+Used to pull the content from renote repo to the local repo. <br>
+Pull the content from the origin main branch of the local repo. <br> <br>
+
+<li> <code> git pull </code> </li> 
+Used to pull the content from the set branch of remote repo to the local repo. <br> 
 
 </ol>
