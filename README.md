@@ -25,5 +25,5 @@ ____
 
 ### 🔄 Status
 
-> 🧠 Completed learning <br>
-> 🗓️ Last Update: 2025-08-06
+🧠 Ongoing <br>
+🗓️ Last Update: 2025-08-07
