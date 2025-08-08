@@ -37,7 +37,9 @@ Used to commit the staged files with a message. <br> <br>
 Used to commit the staged files using the set/default code editor. The commit message is written with the help of the default code editor. <br> <br>
 
 <li> <code> git commit -am "message" </code> </li>
+<li> <code> git commit -a -m "message" </code> </li>
 Used to stage and commit the file simultaneously with a message. <br> 
+This command works only for modified and updated files and not for newly created files. <br>
 
 ____
 
@@ -72,6 +74,9 @@ Commit key is generated depending on the contents of the file. </li>
 
 <li> <code> git log --oneline </code> </li>
 Used to get commit history in short form - 7 character SHA-1 key and a one line commit message. <br> 
+
+<li> <code> git log --oneline --graph </code> </li>
+Used to get commit history in short form - 7 character SHA-1 key, one line commit message and in the form of graph. <br> 
 
 ____
 
