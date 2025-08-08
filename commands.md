@@ -1,8 +1,9 @@
-## Command Used for the Project
+## Commands Used for the Project
 
 The Git commands used to complete the tasks are as follows:
 
 <ol>
+<h3> <i> General </i> </h3>
 
 <li> <code> git --version </code> </li>
 Tells the version of Git installed in the system. <br> <br>
@@ -10,9 +11,12 @@ Tells the version of Git installed in the system. <br> <br>
 <li> <code> git [topic] --help </code> </li>
 Used to get information regarding the <i> topic </i> in the new tab. <br> 
 
+</ol>
+
 ____ 
 
-<br>
+<ol>
+<h3> <i> Modifying files to saving files </i> </h3>
 
 <li> <code> git init </code> </li>
 - Used to initialize the current repository as git repository. <br>
@@ -36,14 +40,17 @@ Used to commit the staged files with a message. <br> <br>
 <li> <code> git commit </code> </li>
 Used to commit the staged files using the set/default code editor. The commit message is written with the help of the default code editor. <br> <br>
 
-<li> <code> git commit -am "message" </code> </li>
-<li> <code> git commit -a -m "message" </code> </li>
+<li> <code> git commit -am "message" </code> <br> 
+<code> git commit -a -m "message" </code> </li>
 Used to stage and commit the file simultaneously with a message. <br> 
 This command works only for modified and updated files and not for newly created files. <br>
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Configuration </i> </h3>
 
 <li> <code> git config --global user.email [email_id] </code> </li>
 Used to set the <i> email-id </i> of the user. <br> <br>
@@ -57,9 +64,12 @@ Used to check the <i> email-id </i> of the user. <br> <br>
 <li> <code> git config --global user.name </code> </li>
 Used to check the <i> user-name </i> of the user. <br> 
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> History Checking </i> </h3>
 
 <li> <code> git status </code> </li>
 Used to get the current status of the repository. <br> <br>
@@ -72,15 +82,18 @@ Every commit is assigned with a SHA-1 (40 character) key, a hexadecimal key. <br
 Commit key is generated depending on the contents of the file. </li>
 </blockquote> <br>
 
-<li> <code> git log --oneline </code> </li>
-Used to get commit history in short form - 7 character SHA-1 key and a one line commit message. <br> 
+<li> <code> git log --oneline </code> </li> 
+Used to get commit history in short form - 7 character SHA-1 key and a one line commit message. <br> <br>
 
 <li> <code> git log --oneline --graph </code> </li>
 Used to get commit history in short form - 7 character SHA-1 key, one line commit message and in the form of graph. <br> 
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Detailed History Checking </i> </h3>
 
 <li> <code> git show HEAD </code> </li>
 Used to get detailed commit history about the HEAD branch. <br> <br>
@@ -92,9 +105,12 @@ Used to get the detailed commit history for the provided commit-id. <br> <br>
 Used to get the detailed commit history for the nth commit-id. <br> 
 E.g. <code> git show HEAD~3 </code> - Shows commit history of the 3rd commit.<br> 
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Opening Editor </i> </h3>
 
 <li> <code> code . </code> </li>
 Used to run the current directory in the default code editor. <br> <br>
@@ -108,9 +124,12 @@ Used to run the file <i> file_name </i> in the default code editor. <br> <br>
 <li> <code> code ~/.git config </code> </li>
 Used to check the configuration set for the Git. Gives information about the username, email and editor. <br> 
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Checkout </i> </h3>
 
 <li> <code> git checkout [file_name] </code> </li>
 Used to unmodify/revert the changes in the <i> file_name </i>. <br>
@@ -127,10 +146,13 @@ Status of the project during that <i> commit_id </i> is retrieved back. <br>
 To go back to the master branch, use <code> git checkout master </code>. <br> 
 Any modifications made in the detatched HEAD does not get saved, which means it does not exists once moved to the master branch. <br> 
 
+</ol>
+
 ____
 
-<br>
- 
+<ol>
+<h3> <i> Revert and Reset </i> </h3>
+
 <li> <code> git revert [commit_id] </code> </li>
 Undo the specific commit with the given <i> commit_id </i>. <br>
 No other commits are disturbed, while reverting the specific commit. <br> 
@@ -160,9 +182,12 @@ Remove the commits and follows the <code> git reset --mixed </code> command. <br
 (c) /*.[extension] - If more files with same extension is present and we have to ignore them at once 
 </blockquote> <br>
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Pushing and Pulling </i> </h3>
 
 <li> <code> git remote add origin [https-link-of-repository] </code> </li> 
 Used to connect local repo to the remote repo. <br>
@@ -201,9 +226,12 @@ Pull the content from the origin main branch of the local repo. <br> <br>
 <li> <code> git pull </code> </li> 
 Used to pull the content from the set branch of remote repo to the local repo. <br> 
 
+</ol>
+
 ____
 
-<br>
+<ol>
+<h3> <i> Branching </i> </h3>
 
 <li> <code> git branch [branch_name] </code> </li>
 Used to create a new branch <i> branch_name </i>. <br> <br>
@@ -246,3 +274,33 @@ Branch deleted locally, does not delete the branch remotely. And branch deleted 
 </blockquote> <br> <br>
 
 </ol>
+
+____
+
+<ol>
+<h3> <i> Merging </i> </h3>
+
+<li> <code> git merge [branch_name] </code> </li>
+Used to merge the branch <i> branch_name </i> with the <i> main branch </i>. <br> 
+Used to combine branches by preserving history. <br> <br>
+
+<li> <code> git merge --abort </code> </li>
+Used to abort the merges of the the branch <i> branch_name </i> with the <i> main branch </i>. <br> <br>
+
+<li> <code> git rebase [branch_name] </code> </li>
+Used to combine the branch <i> branch_name </i> with the <i> main branch </i>. <br>
+Used to combine branches by rewriting history. <br> <br>
+
+<blockquote>
+<i> main: </i> A -> B <br> <br>
+<i> feature1: </i> A -> B -> C -> D <br>
+<i> main: </i> A -> B -> E -> F <br> <br>
+
+After rebasing, the feature1 branch becomes, <br>
+<i> feature1: </i> A -> B -> E -> F -> C' -> D' <br>
+The <i> main </i> branch was 2 commits ahead of <i> feature1 </i> branch, so rebasing the branch, adds the commits from the main branch into the <i> feature1 </i> branch. In log history of <i> feature1 </i> branch, we can see the commits of <i> main </i> branch also. But in the history of <i> main </i> branch we are not able to see the commits from the <i> feature1 </i> branch, so for that we need to merge these two branches.
+</blockquote>
+
+</ol>
+
+____

@@ -1,6 +1,6 @@
 ## 📒 Git – Notes
 
-> 🗓️ Last Updated: 2025-08-06 <br>
+> 🗓️ Last Updated: 2025-08-09 <br>
 > 🏷️ Part of my Week 2 of #CodetoCareer journey
 
 ---
@@ -144,14 +144,7 @@ Refer [commands.md](./commands.md) for list of commands and their use.
 ---
 
 
-## 8. Questions
-
-1. 
-
----
-
-
-## 9. References
+## 8. References
 
 - [Git - Introduction](https://www.geeksforgeeks.org/git/git-introduction/)
 - [How to Install Git on Windows Command Line?](https://www.geeksforgeeks.org/installation-guide/how-to-install-git-on-windows-command-line/)
