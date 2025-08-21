@@ -22,8 +22,3 @@ ____
 📄 See [notes.md](./notes.md), [commands.md](./commands.md) for full detailed notes.
 
 ____
-
-### 🔄 Status
-
-🧠 Ongoing <br>
-🗓️ Last Update: 2025-08-09
