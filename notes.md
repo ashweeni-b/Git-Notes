@@ -1,6 +1,5 @@
 ## 📒 Git – Notes
 
-> 🗓️ Last Updated: 2025-08-09 <br>
 > 🏷️ Part of my Week 2 of #CodetoCareer journey
 
 ---
