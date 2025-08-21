@@ -1,6 +1,6 @@
-## Commands Used for the Project
+## Commands in Git
 
-The Git commands used to complete the tasks are as follows:
+The Git commands are as follows:
 
 <ol>
 <h3> <i> General </i> </h3>
