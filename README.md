@@ -1,7 +1,6 @@
 ## 📘 Git
 
 This folder contains well-structured notes on <b>Git</b>.
-
 ____
 
 ### 📚 Contents
@@ -15,8 +14,7 @@ ____
 5. Different file states in Git
 6. Git Installation
 7. Git Commands
-8. Questions
-9. References
+8. References
 
 
 📄 See [notes.md](./notes.md), [commands.md](./commands.md) for full detailed notes.
