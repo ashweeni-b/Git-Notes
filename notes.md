@@ -1,7 +1,5 @@
 ## 📒 Git – Notes
 
-> 🏷️ Part of my Week 2 of #CodetoCareer journey
-
 ---
 
 ## 1. Introduction
@@ -148,4 +146,3 @@ Refer [commands.md](./commands.md) for list of commands and their use.
 - [Git - Introduction](https://www.geeksforgeeks.org/git/git-introduction/)
 - [How to Install Git on Windows Command Line?](https://www.geeksforgeeks.org/installation-guide/how-to-install-git-on-windows-command-line/)
 - [How to install Git on Windows 11](https://youtu.be/t2-l3WvWvqg?si=LcF-lqIZFgKzTAL5)
-- [CodetoCareer - Week 2](https://www.linkedin.com/posts/activity-7350177852027232256-h1JE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-UhZwBDTW7JxUFdBcAbzubFz_HhQRI1Ng)
