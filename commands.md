@@ -25,11 +25,17 @@ ____
 - <i> .git </i> file is created in the directory after initialization of the repository as the Git repository. <br>
 - <i> .git </i> file is the hidden file in the directory. <br> <br>
 
-<li> <code> git add [file_name] </code> </li>
-Used to add the modified <i> file_name </i> to the staging area. <br> <br>
+<li> <code> git add -A </code> </li>
+Stages all the changes
 
 <li> <code> git add . </code> </li> 
-Used to add all the modified files in the staging area. <br> <br>
+Stages new and modified files. <br> <br>
+
+<li> <code> git add -u </code> </li>
+Stages modified and deleted files only. <br> <br>
+
+<li> <code> git add [file_name] </code> </li> 
+Stages a specific file. <br> <br>
 
 <li> <code> git rm --cached [file_name] </code> </li>
 Used to unstage the <i> file_name </i> from the staging area. <br> <br>
