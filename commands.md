@@ -221,13 +221,26 @@ The https-link of the remote repo is used. <br> <br>
 <li> <code> git remote -v </code> </li> 
 List the remote repos. <br> <br>
 
+<li> <code> git remote show origin </code> </li> 
+Shows the detailed remote info. <br> <br>
+
 <li> <code> git remote remove origin </code> </li> 
 Removes the connection of local repo and remote repo. <br> <br>
+
+<li> <code> git remote set-url origin <url> </code> </li>
+Change the remote URL of the repo. <br> <br>
 
 <li> <code> git push -u origin [branch_name] </code> </li>
 - Pushes the branch to remote repo with the help of upstream. <br>
 - Also, sets the upstream branch as the origin main. <br>
 - After setting the upstream branch we can directly push or pull to and from the remot repo. <br> <br>
+
+<li> <code> git branch --set-upstream-to=origin/[branch] main </code> </li> <br>
+- Links local branch to the remote branch so that Git knows which branch to pull from and push to by default. <br>
+- In Git, the upstream branch is the default remote branch that your current local branch is tracking. <br>
+- origin/[branch] is the remote branch and main is the local branch. <br>
+- Set the local branch main to track the remote branch origin/[branch]. <br>
+- After setting this branch, we can directly use <code> git pull </code> and <code> git push </code> <br> <br>
 
 <li> <code> git push origin main </code> </li> 
 Pushes the local repo to the remote repo. <br>
@@ -235,6 +248,16 @@ The content from the origin main branch is psuhed to the remote repo. <br> <br>
 
 <li> <code> git push </code> </li> 
 Push the commits. <br> <br>
+
+<li> <code> git push origin [branch_name] </code> </li>
+Pushes the locally created branch to the remote repo. <br> <br>
+
+<li> <code> git push origin --delete [branch_name] </code> </li>
+Remotely deletes the branch from the local repo. <br> <br>
+
+<blockquote>
+Branch deleted locally, does not delete the branch remotely. And branch deleted remotely, does not delete the branch locally. 
+</blockquote> <br> 
 
 <li> <code> git pull origin main </code> </li> 
 Fetches or merges from remote repo to the local repo. <br>
@@ -246,29 +269,12 @@ Fetches and merges the commits from the remote repo. <br> <br>
 <li> <code> git fetch </code> </li>
 Fetch changes from the remote repo, without merging the changes. <br> <br>
 
-<li> <code> git push origin [branch_name] </code> </li>
-Pushes the locally created branch to the remote repo. <br> <br>
-
 <li> <code> git pull origin [branch_name] </code> </li>
 Pulls the remotely created branch to the local repo. <br> <br>
 
 <blockquote>
 In Git, the remotely pulled repo is not seen in the local repo until we track the repos. <br>
-</blockquote> <br> 
-
-<li> <code> git push origin --delete [branch_name] </code> </li>
-Remotely deletes the branch from the local repo. <br> <br>
-
-<blockquote>
-Branch deleted locally, does not delete the branch remotely. And branch deleted remotely, does not delete the branch locally. 
-</blockquote> <br> 
-
-<li> <code> git branch --set-upstream-to=origin/[branch] main </code> </li> <br>
-- Links local branch to the remote branch so that Git knows which branch to pull from and push to by default. <br>
-- In Git, the upstream branch is the default remote branch that your current local branch is tracking. <br>
-- origin/[branch] is the remote branch and main is the local branch. <br>
-- Set the local branch main to track the remote branch origin/[branch]. <br>
-- After setting this branch, we can directly use <code> git pull </code> and <code> git push </code> <br> 
+</blockquote> <br>
 
 </ol>
 
